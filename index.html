@@ -5,9 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo">
           <img src="http://placehold.it/70x50" width="70" height="50" alt="Логотип 'Sedona'">
         </a>
         <ul class="site-navigation">
@@ -20,25 +21,26 @@
     </header>
     <main class="container">
       <div class="greeting">
-        <h1 class="virtually-hidden">Sedona</h1>
+        <h1 class="visually-hidden">Sedona</h1>
         <img src="http://placehold.it/150x50" width="150" height="50" alt="Welcome">
         <img src="http://placehold.it/180x30" width="180" height="30" alt="--- to the gorgeous ---">
         <img src="http://placehold.it/250x60" width="250" height="60" alt="SEDONA">
         <img src="http://placehold.it/140x60" width="140" heigth="60" alt="Because the Grand Canyon sucks!">
       </div>
+      <!-- Псевдоэлемент треугольники -->
       <!-- Выбрал <div> как оформительский тег, чтобы потом задать ему картинку на бэкграунд -->
       <section class="reasons">
         <h2 class="reason-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
-        <div class="reason-photo reason-1">
+        <div class="reason-item reason-photo">
           <h3>Настоящий городок</h3>
-          <p>- № 1 -</p>
+          <span class="reason-point">- № 1 -</span> 
           <p>Седона - не аттракциона для туристов, там течет своя жизнь</p>
           <img src="img/reason-1.jpg" width=66% height="250" alt="Фото города">
         </div>
         <section class="services">
           <h2 class="virtually-hidden">Услуги в городе</h2>
-          <ul>
+          <ul class="services-list">
             <li class="service-item service-lodging">
               <!-- Картинку бэкграундом к пункту списка -->
               <h3 class="service-title">Жилье</h3>
@@ -56,44 +58,44 @@
             </li>
           </ul>
         </section>
-        <div class="reason-photo reason-2">
+        <div class="reason-item reason-photo">
+           <img src="img/reason-2.jpg" width=66% height="250" alt="Мост дьявола">
           <h3>Там есть мост дьявола</h3>
-          <p>- № 2 -</p>
+          <span class="reason-point">- № 2 -</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          <img src="img/reason-2.jpg" width=66% height="250" alt="Мост дьявола">
         </div>
-        <ul>
-          <li class="reason-3">
+        <div class="reason-item">
             <h3>Небольшая площадь</h3>
-            <p>- № 3 -</p>
+            <span class="reason-point">- № 3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reason-4"> 
+        </div>
+        <div class="reason-item">
             <h3>Красивая дорога</h3>
-            <p>- № 4 -</p>
+            <span class="reason-point">- № 4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>  
-          </li>
-          <li class="reason-5">
+        </div>
+        <div class="reason-item">
             <h3>Мало туристов</h3>
-            <p>- № 5 -</p>
+            <span class="reason-point">- № 5 -</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
+        </div>
       </section>
       <section class="hotel-search">
-        <h2 class="virtually-hidden">Поиск гостиницы</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="interested">Заинтересовались?</p>
+        <p class="date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <iframe src="google.com" width="600" height="450"></iframe>
     </main>
-    <footer class="main-footer">
-      <p class="hashtag">#VISITSEDONA</p>
+    <footer class="main-footer main-footer-transparent">
+      <div class="hashtag">#VISITSEDONA</div>
       <section class="footer-social">
-        <a class="footer-social-twit" href="#">Twitter</a>
-        <a class="footer-social-fb" href="#">Facebook</a>
-        <a class="footer-social-tube"href="#">YouTube</a>
+        <ul>
+          <li><a class="social-button twit" href="#">Twitter</a></li>
+          <li><a class="social-button fb" href="#">Facebook</a></li>
+          <li><a class="social-button tube" href="#">YouTube</a></li>
+        </ul>
       </section>
       <p class="footer-copyright">
         <b>Website by</b>
@@ -102,26 +104,31 @@
         </a>
       </p>
     </footer>
-    <section class="modal modal-search">
+    <section class="modal modal-search"> 
       <form class="search-form" action="#" method="post">
-        <p class="date check-in">
-          <label for="date1">Дата заезда</label> 
-          <input type="date" id="date1" name="date">
+        <p class="date-in">
+          <label for="date-check-in">Дата заезда</label> 
+          <input type="text" id="date1" name="date">
         </p>
-        <p class="date check-out">
-          <label for="date2">Дата выезда</label> 
-          <input type="date" id="date2" name="date">
+        <p class="date-out">
+          <label for="date-check-out">Дата выезда</label> 
+          <input type="text" id="date2" name="date">
         </p>
-        <p class="people">
+        <p class="people-count">
           <label for="adult-amount">Взрослые:</label>
           <input type="number" step="1" id="adult-amount" name="people">
+          <button class="button-plus">+</button>
+          <button class="button-minus">-</button>
         </p>
-        <p class="people">
+        <p class="people-count">
           <label for="kids-amount">Дети:</label>
           <input type="number" step="1" id="kids-amount" name="people">
+          <button class="button-plus">+</button>
+          <button class="button-minus">-</button>
         </p>
-        <button type="submit">Найти</button>
+        <button class="button-submit" type="submit">Найти</button>
       </form>
     </section>
+    </div>
   </body>
 </html>
