@@ -1,0 +1,58 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  background-color: grey;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reason-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.reason-item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.reason-photo {
+  color: #ffffff;
+}
+
+.service-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.result-found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotel-variant-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
