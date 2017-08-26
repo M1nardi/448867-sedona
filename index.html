@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -31,31 +32,31 @@
         <!-- Псевдоэлемент треугольники -->
         <!-- Выбрал <div> как оформительский тег, чтобы потом задать ему картинку на бэкграунд -->
         <section class="reasons">
-          <h2 class="reason-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="reason-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p class="annotation">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
           <div class="reason-item reason-photo">
             <h3 class="reason-item-title">Настоящий городок</h3>
             <span class="reason-point">- № 1 -</span> 
-            <p class="reason-description">Седона - не аттракциона для туристов, там течет своя жизнь</p>
+            <p class="reason-description">Седона - не аттракциона<br>для туристов, там течет<br>своя жизнь</p>
             <img src="img/reason-1.jpg" width="500" height="250" alt="Фото города">
           </div>
           <section class="services">
-            <h2 class="virtually-hidden">Услуги в городе</h2>
+            <h2 class="visually-hidden">Услуги в городе</h2>
             <ul class="services-list">
               <li class="service-item service-lodging">
                 <!-- Картинку бэкграундом к пункту списка -->
                 <h3 class="service-title">Жилье</h3>
-                <p class="service-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="service-description">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
               </li>
               <li class="service-item service-food">
               <!-- Картинку бэкграундом к пункту списка -->
                 <h3 class="service-title">Еда</h3>
-                <p class="service-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="service-description">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
               </li>
               <li class="service-item service-souvenirs">
               <!-- Картинку бэкграундом к пункту списка -->
                 <h3 class="service-title">Сувениры</h3>
-                <p class="service-description">Не только китайского, но и местного производства!</p>
+                <p class="service-description">Не только китайского, но и местного<br>производства!</p>
               </li>
             </ul>
           </section>
@@ -63,28 +64,28 @@
             <img src="img/reason-2.jpg" width="500" height="250" alt="Мост дьявола">
             <h3 class="reason-item-title">Там есть мост дьявола</h3>
             <span class="reason-point">- № 2 -</span>
-            <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="reason-description">Да, по нему можно<br>пройти! Если конечно<br>вы осмелитесь</p>
           </div>
           <div class="reason-item">
               <h3 class="reason-item-title">Небольшая площадь</h3>
               <span class="reason-point">- № 3 -</span>
-              <p class="reason-description">Все достопримечательности находятся очень близко</p>
+              <p class="reason-description">Все достопримечательности<br>находятся очень близко</p>
           </div>
           <div class="reason-item">
               <h3 class="reason-item-title">Красивая дорога</h3>
               <span class="reason-point">- № 4 -</span>
-              <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>  
+              <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>  
           </div>
           <div class="reason-item">
               <h3 class="reason-item-title">Мало туристов</h3>
               <span class="reason-point">- № 5 -</span>
-              <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="reason-description">Большинство едет в Гранд Каньон и<br>толпится там</p>
           </div>
         </section>
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="interested">Заинтересовались?</p>
-          <p class="annotation">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="show">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <div class="map">
@@ -102,7 +103,7 @@
           </ul>
         </section>
         <p class="footer-copyright">
-          <b>Website by</b>
+          <span>Website by</span>
           <a class="button" href="https://htmlacademy.ru">
             <img src="img/htmlacademy-logo.svg" alt="html academy">
           </a>
@@ -121,14 +122,14 @@
           </div>
           <div class="people-count">
             <label for="adult-amount">Взрослые:</label>
-            <input type="number" step="1" id="adult-amount" name="people" value="2">
             <button class="button-plus">+</button>
+            <input type="number" step="1" id="adult-amount" name="people" value="2">
             <button class="button-minus">-</button>
           </div>
           <div class="people-count">
             <label for="kids-amount">Дети:</label>
-            <input type="number" step="1" id="kids-amount" name="people" value="0">
             <button class="button-plus">+</button>
+            <input type="number" step="1" id="kids-amount" name="people" value="0">
             <button class="button-minus">-</button>
           </div>
           <button class="button-submit" type="submit">Найти</button>

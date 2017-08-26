@@ -59,7 +59,7 @@
                 </li>
               </ul>
             </fieldset>
-            <label for="price">Стоимость в сутки (Р):</label>
+            <label class="cost" for="price">Стоимость в сутки (Р):</label>
             <p>от 0</p>
             <p>до 3000</p>
             <input type="range" id="price" name="price" min="0" max="3000">
@@ -71,9 +71,9 @@
           <h3 class="result-found">Найдено: 3</h3>
           <span class="result-sort">Сортировка</span>
           <ul class="sort-items">
-            <li><a class="sort-item-current">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
+            <li><a class="sort-item-price sort-item-current">По цене</a></li>
+            <li><a class="sort-item-type" href="#">По типу</a></li>
+            <li><a class="sort-item-rating" href="#">По рейтингу</a></li>
           </ul>
           <div class="sort-buttons">
               <a class="button-sort-up" href="#"><img src="img/arrow-up.png" width="30" height="30" alt="По возрастанию"></a>
@@ -155,7 +155,7 @@
       <footer class="main-footer">
         <p class="hashtag">#VISITSEDONA</p>
         <section class="footer-social">
-          <ul>
+          <ul class="social-links">
             <li><a class="social-button twit" href="#">Twitter</a></li>
             <li><a class="social-button fb" href="#">Facebook</a></li>
             <li><a class="social-button tube" href="#">YouTube</a></li>
@@ -171,4 +171,4 @@
     </div>
   </body>
 </html>
-     <!-- Доступная разметка страницы --> 
+    
