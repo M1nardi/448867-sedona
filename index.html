@@ -24,21 +24,22 @@
       <main>
         <div class="greeting">
           <h1 class="visually-hidden">Sedona</h1>
-          <img src="img/welcome.png" width="188" height="45" alt="Welcome">
-          <img src="img/gorgeous.png" width="256" height="30" alt="--- to the gorgeous ---">
-          <img src="img/sedona.png" width="458" height="78" alt="SEDONA">
-          <img src="img/because.png" width="296" height="80" alt="Because the Grand Canyon sucks!">
+          <img src="img/greeting.png" width="458" height="352" alt="Welcome to the gorgeous SEDONA. Because the Grand Canyon sucks!">
         </div>
         <!-- Псевдоэлемент треугольники -->
         <!-- Выбрал <div> как оформительский тег, чтобы потом задать ему картинку на бэкграунд -->
         <section class="reasons">
-          <h2 class="reason-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-          <p class="annotation">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+          <div class="reason">
+            <h2 class="reason-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+            <p class="annotation">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+          </div>
           <div class="reason-item reason-photo">
-            <h3 class="reason-item-title">Настоящий городок</h3>
-            <span class="reason-point">- № 1 -</span> 
-            <p class="reason-description">Седона - не аттракциона<br>для туристов, там течет<br>своя жизнь</p>
-            <img src="img/reason-1.jpg" width="500" height="250" alt="Фото города">
+            <div class="reason-annotation">
+              <h3 class="reason-item-title">Настоящий<br>городок</h3>
+              <span class="reason-point">— № 1 —</span> 
+              <p class="reason-description">Седона - не аттракциона для туристов,<br>там течет своя жизнь</p>
+            </div>
+            <img src="img/reason-11.jpg" width="800" height="257" alt="Фото города">
           </div>
           <section class="services">
             <h2 class="visually-hidden">Услуги в городе</h2>
@@ -60,26 +61,30 @@
               </li>
             </ul>
           </section>
-          <div class="reason-item reason-photo">
-            <img src="img/reason-2.jpg" width="500" height="250" alt="Мост дьявола">
-            <h3 class="reason-item-title">Там есть мост дьявола</h3>
-            <span class="reason-point">- № 2 -</span>
-            <p class="reason-description">Да, по нему можно<br>пройти! Если конечно<br>вы осмелитесь</p>
+          <div class="reason-item reason-photo-2">
+            <img src="img/reason-22.jpg" width="800" height="257" alt="Мост дьявола">
+            <div class="reason-annotation">
+              <h3 class="reason-item-title">Там есть<br>мост дьявола</h3>
+              <span class="reason-point">— № 2 —</span>
+              <p class="reason-description">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+            </div>
           </div>
-          <div class="reason-item">
-              <h3 class="reason-item-title">Небольшая площадь</h3>
-              <span class="reason-point">- № 3 -</span>
-              <p class="reason-description">Все достопримечательности<br>находятся очень близко</p>
-          </div>
-          <div class="reason-item">
-              <h3 class="reason-item-title">Красивая дорога</h3>
-              <span class="reason-point">- № 4 -</span>
-              <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>  
-          </div>
-          <div class="reason-item">
-              <h3 class="reason-item-title">Мало туристов</h3>
-              <span class="reason-point">- № 5 -</span>
-              <p class="reason-description">Большинство едет в Гранд Каньон и<br>толпится там</p>
+          <div class="reasons-container">
+            <div class="reason-item">
+                <h3 class="reason-item-title">Небольшая<br>площадь</h3>
+                <span class="reason-point">— № 3 —</span>
+                <p class="reason-description">Все достопримечательности<br>находятся очень близко</p>
+            </div>
+            <div class="reason-item">
+                <h3 class="reason-item-title">Красивая<br>дорога</h3>
+                <span class="reason-point">— № 4 —</span>
+                <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>  
+            </div>
+            <div class="reason-item">
+                <h3 class="reason-item-title">Мало<br>туристов</h3>
+                <span class="reason-point">— № 5 —</span>
+                <p class="reason-description">Большинство едет в Гранд Каньон и<br>толпится там</p>
+            </div>
           </div>
         </section>
         <section class="hotel-search">
@@ -89,7 +94,6 @@
           <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <div class="map">
-          <img src="img/map.jpg" width="" height="" alt="Месторасположение Седоны">
         </div>
       </main>
       <footer class="main-footer main-footer-transparent">

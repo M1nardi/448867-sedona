@@ -59,17 +59,19 @@
                 </li>
               </ul>
             </fieldset>
-            <label class="cost" for="price">Стоимость в сутки (Р):</label>
-            <p>от 0</p>
-            <p>до 3000</p>
-            <input type="range" id="price" name="price" min="0" max="3000">
-            <button class="filter-submit" type="submit">Показать</button>
+            <div class="cost-choose">
+              <label class="cost" for="price">Стоимость в сутки (Р):</label>
+              <p>от 0</p>
+              <p>до 3000</p>
+              <input type="range" id="price" name="price" min="0" max="3000">
+              <button class="filter-submit" type="submit">Показать</button>
+            </div>
           </form>
         </section>
         <section class="result">
           <h2 class="visually-hidden">Результат поиска</h2>
           <h3 class="result-found">Найдено: 3</h3>
-          <span class="result-sort">Сортировка</span>
+          <span class="result-sort">Сортировка:</span>
           <ul class="sort-items">
             <li><a class="sort-item-price sort-item-current">По цене</a></li>
             <li><a class="sort-item-type" href="#">По типу</a></li>
