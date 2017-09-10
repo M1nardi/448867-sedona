@@ -1086,7 +1086,7 @@ input[type="checkbox"]:checked:disabled ~ .filter-checkbox::before {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 259px;
+  width: 270px;
   padding: 0;
   margin: 0;
 }
