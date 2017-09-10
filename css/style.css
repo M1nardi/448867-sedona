@@ -213,7 +213,7 @@ img {
 
 .reason-item-point {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -919,6 +919,7 @@ input[type="checkbox"]:checked:disabled ~ .filter-checkbox::before {
   padding: 6px 29px;
   font-size: 14px;
   line-height: 21px;
+  vertical-align: middle;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -1086,7 +1087,7 @@ input[type="checkbox"]:checked:disabled ~ .filter-checkbox::before {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 270px;
+  width: 258px;
   padding: 0;
   margin: 0;
 }
@@ -1122,7 +1123,7 @@ input[type="checkbox"]:checked:disabled ~ .filter-checkbox::before {
           justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-right: 6px;
+  margin-right: 2px;
 }
 
 .button-detail {
